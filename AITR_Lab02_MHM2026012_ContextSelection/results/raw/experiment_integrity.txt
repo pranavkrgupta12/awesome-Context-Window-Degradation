@@ -1,0 +1,17 @@
+=================================================================
+EXPERIMENT DATA INTEGRITY AUDIT
+=================================================================
+Expected Row Count   : 5000
+Actual Row Count     : 5000 -> [MATCHED]
+Duplicate Keys Check : 0 duplicates -> [PASSED]
+NaN / Missing Values : [NONE - PASSED]
+-----------------------------------------------------------------
+NUMERICAL BOUND VALIDATIONS:
+  Recall in [0, 1]          : True -> [PASSED]
+  Full Coverage in {0, 1}   : True -> [PASSED]
+  Precision in [0, 1]       : True -> [PASSED]
+  Selected Tokens > 0       : True -> [PASSED]
+  Latency (ms) >= 0         : True -> [PASSED]
+=================================================================
+INTEGRITY STATUS     : [VERIFIED_PASS]
+=================================================================

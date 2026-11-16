@@ -1,0 +1,25 @@
+=================================================================
+GATE G2: BASELINE VERIFICATION & SANITY REPORT
+=================================================================
+Evaluation Dataset               : HotpotQA Distractor Validation (500 samples)
+Baseline Method                   : Fixed-k BM25Okapi (k1=1.5, b=0.75)
+-----------------------------------------------------------------
+VERIFICATION TEST 1: UPPER BOUND SANITY (k=10 over 10 candidates)
+  Mean Evidence Recall @ k=10     : 1.0000 (Expected: 1.0000)
+  Mean Full Coverage @ k=10       : 1.0000 (Expected: 1.0000)
+  Upper Bound Status              : [VERIFIED_PASS]
+-----------------------------------------------------------------
+VERIFICATION TEST 2: RANDOM SELECTION CONTROL (Lower Reference Bound)
+  Random Control @ k=1 Recall     : 0.1070 | Full Cov: 0.0000
+  Random Control @ k=3 Recall     : 0.3046 | Full Cov: 0.0660
+  Random Control @ k=5 Recall     : 0.5008 | Full Cov: 0.2252
+  Random Control Status           : [VERIFIED_RECORDED]
+-----------------------------------------------------------------
+VERIFICATION TEST 3: SAME-RUN DETERMINISM
+  Bit-for-Bit Determinism Check   : [VERIFIED_PASS]
+-----------------------------------------------------------------
+VERIFICATION TEST 4: STRICT LEAKAGE AUDIT (500 Questions)
+  Metadata Stripping Invariance   : [VERIFIED_PASS]
+=================================================================
+OVERALL GATE G2 STATUS           : [VERIFIED_APPROVED]
+=================================================================

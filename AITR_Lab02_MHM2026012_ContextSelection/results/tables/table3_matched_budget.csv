@@ -1,0 +1,15 @@
+Retriever,Row_Type,Label,Mean_k,recall_mean,recall_ci_low,recall_ci_upp,full_coverage_mean,full_coverage_ci_low,full_coverage_ci_upp,precision_mean,precision_ci_low,precision_ci_upp,tokens_mean,tokens_ci_low,tokens_ci_upp
+BM25,Configuration Baseline,Fixed k=1,1.0,0.404,0.387,0.421,0.0,0.0,0.0,0.808,0.774,0.842,101.776,96.5544,107.3255
+BM25,Configuration Baseline,Fixed k=2 (Exploratory),2.0,0.616,0.592,0.642,31.8,28.0,36.0,0.616,0.592,0.642,223.206,213.3259,233.3529
+BM25,Configuration Baseline,Fixed k=3 (Nearest Budget),3.0,0.709,0.685,0.732,45.6,41.2,50.0,0.4727,0.4566,0.488,356.234,342.676,369.8594
+BM25,Configuration Baseline,Score-Gap Adaptive-k Proxy,2.22,0.568,0.545,0.592,21.4,18.2,25.2,0.7395,0.7075,0.7707,263.174,235.8974,291.382
+BM25,Paired Difference (Proxy - Fixed),Proxy vs Fixed k=1,1.22,0.164,0.142,0.189,21.4,18.2,25.2,-0.0685,-0.0922,-0.0446,161.398,135.2152,188.8793
+BM25,Paired Difference (Proxy - Fixed),Proxy vs Fixed k=2 (Exploratory),0.22,-0.048,-0.074,-0.024,-10.4,-14.8,-6.2,0.1235,0.0954,0.1514,39.968,12.9146,67.3629
+BM25,Paired Difference (Proxy - Fixed),Proxy vs Fixed k=3 (Nearest Budget),-0.78,-0.141,-0.168,-0.114,-24.2,-29.0,-19.6,0.2668,0.2379,0.2956,-93.06,-120.9309,-66.256
+TF-IDF,Configuration Baseline,Fixed k=1,1.0,0.413,0.396,0.429,0.0,0.0,0.0,0.826,0.792,0.858,84.856,81.1278,88.9902
+TF-IDF,Configuration Baseline,Fixed k=2 (Exploratory),2.0,0.626,0.601,0.651,33.6,29.6,37.8,0.626,0.601,0.651,187.858,181.4967,195.0322
+TF-IDF,Configuration Baseline,Fixed k=3 (Nearest Budget),3.0,0.723,0.697,0.747,49.8,45.595,54.0,0.482,0.4647,0.498,297.9,288.8611,306.9426
+TF-IDF,Configuration Baseline,Score-Gap Adaptive-k Proxy,2.02,0.574,0.552,0.598,23.2,19.6,26.8,0.7698,0.7386,0.7988,200.588,177.3212,226.7936
+TF-IDF,Paired Difference (Proxy - Fixed),Proxy vs Fixed k=1,1.02,0.161,0.138,0.186,23.2,19.6,26.8,-0.0562,-0.0792,-0.0325,115.732,94.1399,140.0244
+TF-IDF,Paired Difference (Proxy - Fixed),Proxy vs Fixed k=2 (Exploratory),0.02,-0.052,-0.076,-0.026,-10.4,-14.6,-6.0,0.1438,0.1182,0.1716,12.73,-9.2579,37.5773
+TF-IDF,Paired Difference (Proxy - Fixed),Proxy vs Fixed k=3 (Nearest Budget),-0.98,-0.149,-0.175,-0.121,-26.6,-31.2,-21.995,0.2878,0.26,0.3151,-97.312,-119.981,-72.8365

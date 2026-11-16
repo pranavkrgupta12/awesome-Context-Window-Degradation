@@ -1,0 +1,39 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Environment secrets and API keys
+.env
+.env.local
+*.pem
+*.key
+
+# Data & Large model weights (Do not track raw data / weights)
+data/raw/*
+!data/raw/.gitkeep
+data/downloads/*
+models_cache/
+hf_cache/
+
+# Raw experiment results / large logs (only track summarized tables & figures)
+results/raw/*.jsonl
+results/raw/*.log
+!results/raw/.gitkeep
+!results/tables/.gitkeep
+!results/figures/.gitkeep
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,36 @@
+=================================================================
+HOTPOTQA DISTRACTOR VALIDATION SPLIT - SANITY CHECK REPORT
+=================================================================
+Total Valid Questions Requested : 500
+Total Valid Questions Loaded    : 500
+Total Rows Inspected            : 505
+Skipped / Defective Rows        : 5
+-----------------------------------------------------------------
+CANDIDATE & GOLD PARAGRAPH CHECKS:
+  Candidate Paragraphs Min / Max : 10 / 10
+  All Samples Exactly 10 Paras   : True
+  Gold Paragraphs Min / Max      : 2 / 2
+  Questions with >=2 Gold Paras  : 500 (100.0%)
+  Questions with 1 Gold Para     : 0 (0.0%)
+-----------------------------------------------------------------
+QUESTION TYPE DISTRIBUTION:
+  comparison          :   92 (18.4%)
+  bridge              :  408 (81.6%)
+-----------------------------------------------------------------
+DEFECTIVE ROW AUDIT (Skipped due to <10 paragraphs):
+  Row 27 (ID: 5abd259d55429924427fcf1a): Record 5abd259d55429924427fcf1a has 2 candidate paragraphs; expected 10.
+  Row 222 (ID: 5adc65e85542996e68525350): Record 5adc65e85542996e68525350 has 5 candidate paragraphs; expected 10.
+  Row 239 (ID: 5ab1d7ac554299449642c7e6): Record 5ab1d7ac554299449642c7e6 has 2 candidate paragraphs; expected 10.
+  Row 276 (ID: 5ab6369655429953192ad2a1): Record 5ab6369655429953192ad2a1 has 2 candidate paragraphs; expected 10.
+  Row 466 (ID: 5a8cfee555429941ae14df5c): Record 5a8cfee555429941ae14df5c has 2 candidate paragraphs; expected 10.
+-----------------------------------------------------------------
+SAMPLE 0 LEAKAGE & METADATA VERIFICATION:
+  ID           : 5a8b57f25542995d1e6f1371
+  Question     : Were Scott Derrickson and Ed Wood of the same nationality?
+  Answer       : yes
+  Type         : comparison
+  Gold Titles  : ['Ed Wood', 'Scott Derrickson']
+  Candidates   : 10 paragraphs
+=================================================================
+SANITY CHECK RESULT: VERIFIED_PASS (Deterministic, zero leakage)
+=================================================================

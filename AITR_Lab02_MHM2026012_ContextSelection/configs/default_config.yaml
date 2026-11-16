@@ -1,0 +1,49 @@
+# Default Experiment Configuration (Frozen Protocol Template)
+
+experiment:
+  name: "long_context_position_retrieval_mitigation"
+  random_seed: 42
+  description: "Investigate evidence position and distractor context degradation vs retrieval mitigation"
+
+factors:
+  context_lengths:
+    - 2048
+    - 4096
+    - 8192
+    - 16384
+  evidence_positions:
+    - "beginning"
+    - "quarter_25"
+    - "middle_50"
+    - "three_quarter_75"
+    - "end"
+  methods:
+    - "direct_long_context"
+    - "retrieval_augmented"
+
+model:
+  backend: "api" # options: "api", "local_hf"
+  model_name: "gemini-1.5-flash" # To be confirmed at Gate G2
+  temperature: 0.0
+  max_output_tokens: 128
+
+retrieval:
+  method: "dense" # dense (sentence-transformers) or sparse (bm25)
+  embedding_model: "all-MiniLM-L6-v2"
+  chunk_size_tokens: 256
+  chunk_overlap_tokens: 32
+  top_k: 3
+
+evaluation:
+  metrics:
+    - "exact_match"
+    - "token_f1"
+    - "input_tokens"
+    - "latency_seconds"
+  num_samples_per_condition: 50 # to be frozen at Gate G2/G3
+
+paths:
+  data_dir: "data/processed"
+  raw_results_dir: "results/raw"
+  tables_dir: "results/tables"
+  figures_dir: "results/figures"

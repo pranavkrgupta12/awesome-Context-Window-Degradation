@@ -5,7 +5,8 @@ A curated research repository for **Context-Window Degradation and Its Impact on
 ## Contents
 
 - [Overview](#overview)
-- [AI-Assisted Research Paper](#ai-assisted-research-paper)
+- [AI-Assisted Research Paper (Paper 1)](#ai-assisted-research-paper)
+- [Paper 2: Implementation-Based Study (AITR Lab 02)](#paper-2-implementation-based-study-aitr-lab-02)
 - [Citation Integrity Audit](#citation-integrity-audit)
 - [References](#references)
 - [Datasets and Benchmarks](#datasets-and-benchmarks)
@@ -38,6 +39,29 @@ The paper contains:
 - References
 
 [View the AI-Assisted Research Paper](paper/AI_Assisted_Research_Paper.pdf)
+
+## Paper 2: Implementation-Based Study (AITR Lab 02)
+
+**Title:** Fixed-$k$ versus Score-Gap Adaptive-$k$ Proxy Context Selection for Multi-Hop QA: An Evidence-Coverage and Token-Efficiency Study  
+**Author:** Pranav Kumar Gupta (MHM2026012@iiita.ac.in), Department of Information Technology, IIIT Allahabad  
+**Course Milestone:** AI Tools for Research (Post-Mid-Sem Assignment / Lab 02)  
+**Study Pathway:** Pathway B (Controlled Comparative Study)  
+**Project Folder:** [AITR_Lab02_MHM2026012_ContextSelection/](AITR_Lab02_MHM2026012_ContextSelection/)  
+
+This experimental study builds directly upon Gaps 1 and 5 identified in the Paper 1 literature review. It investigates whether single-pass score-gap context selection (inspired by Adaptive-$k$) mitigates context-window distractor saturation without missing necessary supporting evidence for multi-hop questions on the HotpotQA benchmark.
+
+### Quick Links to Paper 2 Deliverables:
+- **Project Documentation & Guide:** [AITR_Lab02_MHM2026012_ContextSelection/README.md](AITR_Lab02_MHM2026012_ContextSelection/README.md)
+- **IEEE Conference Manuscript (LaTeX):** [AITR_Lab02_MHM2026012_ContextSelection/paper/main.tex](AITR_Lab02_MHM2026012_ContextSelection/paper/main.tex)
+- **Overleaf Package Archive:** [AITR_Lab02_MHM2026012_ContextSelection/paper/overleaf_package.zip](AITR_Lab02_MHM2026012_ContextSelection/paper/overleaf_package.zip)
+- **Experimental Protocol (Mermaid & Specs):** [AITR_Lab02_MHM2026012_ContextSelection/paper/protocol.md](AITR_Lab02_MHM2026012_ContextSelection/paper/protocol.md)
+- **Experimental Results & Tables:** [AITR_Lab02_MHM2026012_ContextSelection/results/tables/](AITR_Lab02_MHM2026012_ContextSelection/results/tables/)
+- **Publication Figures (PNG/PDF):** [AITR_Lab02_MHM2026012_ContextSelection/results/figures/](AITR_Lab02_MHM2026012_ContextSelection/results/figures/)
+- **Exploratory Demo Notebook:** [AITR_Lab02_MHM2026012_ContextSelection/notebooks/exploration_and_demo.ipynb](AITR_Lab02_MHM2026012_ContextSelection/notebooks/exploration_and_demo.ipynb)
+- **5-Minute Viva Walkthrough Demo:** [AITR_Lab02_MHM2026012_ContextSelection/DEMO_SCRIPT.md](AITR_Lab02_MHM2026012_ContextSelection/DEMO_SCRIPT.md)
+- **Technical Defense Q&A (25 Questions):** [AITR_Lab02_MHM2026012_ContextSelection/VIVA_QA.md](AITR_Lab02_MHM2026012_ContextSelection/VIVA_QA.md)
+- **AI Collaboration & Integrity Log:** [AITR_Lab02_MHM2026012_ContextSelection/ai_assistance_log.md](AITR_Lab02_MHM2026012_ContextSelection/ai_assistance_log.md)
+- **Student Final Self-Check Report:** [AITR_Lab02_MHM2026012_ContextSelection/assignment_final_self_check.md](AITR_Lab02_MHM2026012_ContextSelection/assignment_final_self_check.md)
 
 ## Citation Integrity Audit
 
